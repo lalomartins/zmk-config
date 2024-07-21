@@ -27,6 +27,15 @@
         };
     };
 
+    macros {
+        accent: accent {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp RIGHT_GUI &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "ACCENT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,11 +72,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE         &kp F1       &kp F2     &kp F3    &kp F4    &kp F5                                          &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11
-&kp INT_MUHENKAN  &kp N1       &kp N2     &kp N3    &kp N4    &kp N5                                          &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp F12
-&kp INT_KANA      &kp EXCL     &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                                       &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR  &kp EQUAL
-&trans            &kp INT_YEN  &kp MINUS  &kp PLUS  &kp LBRC  &kp RBRC       &kp C_MUTE    &kp INT_KPJPCOMMA  &kp LBKT   &kp RBKT  &kp SEMI   &kp COLON  &kp BSLH  &mt RIGHT_SHIFT INT_RO
-                               &trans     &trans    &trans    &kp BACKSPACE  &to 2         &trans             &trans     &trans    &trans     &trans
+&kp GRAVE         &kp F1       &kp F2     &kp F3    &kp F4       &kp F5                                          &kp F6         &kp F7              &kp F8             &kp F9                &kp F10   &kp F11
+&kp INT_MUHENKAN  &kp N1       &kp N2     &kp N3    &kp N4       &kp N5                                          &kp N6         &kp N7              &kp N8             &kp N9                &kp N0    &kp F12
+&kp INT_KANA      &kp EXCL     &kp AT     &kp HASH  &kp DLLR     &kp ESCAPE                                      &accent PLUS   &accent COMMA       &accent SEMICOLON  &accent MINUS         &none     &none
+&trans            &kp INT_YEN  &kp MINUS  &kp PLUS  &kp PERCENT  &kp GRAVE      &kp C_MUTE    &kp INT_KPJPCOMMA  &accent EQUAL  &accent LEFT_BRACE  &accent CARET      &accent LEFT_BRACKET  &kp BSLH  &mt RIGHT_SHIFT INT_RO
+                               &trans     &trans    &trans       &kp BACKSPACE  &to 2         &trans             &trans         &trans              &trans             &trans
             >;
 
             sensor-bindings =
