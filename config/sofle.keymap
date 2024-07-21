@@ -55,11 +55,11 @@
         fn_layer {
             display-name = "fn";
             bindings = <
-&kp GRAVE             &kp F1         &kp F2              &kp F3             &kp F4                &kp F5                                           &kp F6           &kp F7           &kp F8           &kp F9           &kp F10       &kp F11
-&kp INT_MUHENKAN      &none          &none               &none              &none                 &kp LANGUAGE_5                                   &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp F12
-&kp INT_KANA          &accent PLUS   &accent COMMA       &accent SEMICOLON  &accent MINUS         &kp ESCAPE                                       &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ENTER
-&mt LCTRL KP_NUMLOCK  &accent EQUAL  &accent LEFT_BRACE  &accent CARET      &accent LEFT_BRACKET  &kp GRAVE       &kp C_MUTE    &kp INT_KPJPCOMMA  &kp INT_YEN      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BSLH      &mt RIGHT_SHIFT INT_RO
-                                     &trans              &trans             &trans                &kp BACKSPACE   &to 2         &trans             &trans           &kp KP_NUMBER_0  &kp KP_COMMA     &kp KP_DOT
+&kp GRAVE             &kp F1                &kp F2             &kp F3              &kp F4         &kp F5                                           &kp F6           &kp F7           &kp F8           &kp F9           &kp F10       &kp F11
+&kp INT_MUHENKAN      &none                 &none              &none               &none          &kp LANGUAGE_5                                   &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp F12
+&kp INT_KANA          &accent LEFT_BRACKET  &accent CARET      &accent LEFT_BRACE  &accent EQUAL  &kp ESCAPE                                       &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ENTER
+&mt LCTRL KP_NUMLOCK  &accent MINUS         &accent SEMICOLON  &accent COMMA       &accent PLUS   &kp GRAVE       &kp C_MUTE    &kp INT_KPJPCOMMA  &kp INT_YEN      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BSLH      &mt RIGHT_SHIFT INT_RO
+                                            &trans             &trans              &trans         &kp BACKSPACE   &to 2         &trans             &trans           &kp KP_NUMBER_0  &kp KP_COMMA     &kp KP_DOT
             >;
 
             sensor-bindings =
