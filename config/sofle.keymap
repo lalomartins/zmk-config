@@ -58,9 +58,9 @@
 
             bindings = <
 &kp GRAVE         &kp F1       &kp F2     &kp F3    &kp F4       &kp F5                                          &kp F6         &kp F7              &kp F8             &kp F9                &kp F10   &kp F11
-&kp INT_MUHENKAN  &none        &none      &none     &none        &none                                           &none          &none               &none              &none                 &none     &kp F12
-&kp INT_KANA      &none        &none      &none     &none        &kp ESCAPE                                      &accent PLUS   &accent COMMA       &accent SEMICOLON  &accent MINUS         &none     &none
-&trans            &kp INT_YEN  &none      &none     &none        &kp GRAVE      &kp C_MUTE    &kp INT_KPJPCOMMA  &accent EQUAL  &accent LEFT_BRACE  &accent CARET      &accent LEFT_BRACKET  &kp BSLH  &mt RIGHT_SHIFT INT_RO
+&kp INT_MUHENKAN  &none        &none      &none     &none        &kp LANGUAGE_5                                  &none          &kp KP_NUMBER_7     &kp KP_NUMBER_8    &kp KP_NUMBER_9       &none     &kp F12
+&kp INT_KANA      &accent PLUS   &accent COMMA       &accent SEMICOLON  &accent MINUS         &kp ESCAPE                                      &none          &kp KP_NUMBER_4     &kp KP_NUMBER_5    &kp KP_NUMBER_6       &none     &none
+&trans            &accent EQUAL  &accent LEFT_BRACE  &accent CARET      &accent LEFT_BRACKET          &kp GRAVE      &kp C_MUTE    &kp INT_KPJPCOMMA  &kp INT_YEN          &kp KP_NUMBER_1     &kp KP_NUMBER_2    &kp KP_NUMBER_3       &kp BSLH  &mt RIGHT_SHIFT INT_RO
                                &trans     &trans    &trans       &kp BACKSPACE  &to 2         &trans             &trans         &trans              &trans             &trans
             >;
 
