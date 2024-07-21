@@ -41,7 +41,6 @@
 
         default_layer {
             display-name = "default";
-
             bindings = <
 &kp ESCAPE        &kp N1  &kp N2        &kp N3        &kp N4        &kp N5                                            &kp N6       &kp N7             &kp N8     &kp N9       &kp N0    &kp MINUS
 &kp TAB           &kp Q   &kp W         &kp E         &kp R         &kp T                                             &kp Y        &kp U              &kp I      &kp O        &kp P     &kp LEFT_BRACKET
@@ -55,13 +54,12 @@
 
         fn_layer {
             display-name = "fn";
-
             bindings = <
-&kp GRAVE         &kp F1       &kp F2     &kp F3    &kp F4       &kp F5                                          &kp F6         &kp F7              &kp F8             &kp F9                &kp F10   &kp F11
-&kp INT_MUHENKAN  &none        &none      &none     &none        &kp LANGUAGE_5                                  &none          &kp KP_NUMBER_7     &kp KP_NUMBER_8    &kp KP_NUMBER_9       &none     &kp F12
-&kp INT_KANA      &accent PLUS   &accent COMMA       &accent SEMICOLON  &accent MINUS         &kp ESCAPE                                      &none          &kp KP_NUMBER_4     &kp KP_NUMBER_5    &kp KP_NUMBER_6       &none     &none
-&trans            &accent EQUAL  &accent LEFT_BRACE  &accent CARET      &accent LEFT_BRACKET          &kp GRAVE      &kp C_MUTE    &kp INT_KPJPCOMMA  &kp INT_YEN          &kp KP_NUMBER_1     &kp KP_NUMBER_2    &kp KP_NUMBER_3       &kp BSLH  &mt RIGHT_SHIFT INT_RO
-                               &trans     &trans    &trans       &kp BACKSPACE  &to 2         &trans             &trans         &trans              &trans             &trans
+&kp GRAVE             &kp F1         &kp F2              &kp F3             &kp F4                &kp F5                                           &kp F6           &kp F7           &kp F8           &kp F9           &kp F10       &kp F11
+&kp INT_MUHENKAN      &none          &none               &none              &none                 &kp LANGUAGE_5                                   &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp F12
+&kp INT_KANA          &accent PLUS   &accent COMMA       &accent SEMICOLON  &accent MINUS         &kp ESCAPE                                       &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ENTER
+&mt LCTRL KP_NUMLOCK  &accent EQUAL  &accent LEFT_BRACE  &accent CARET      &accent LEFT_BRACKET  &kp GRAVE       &kp C_MUTE    &kp INT_KPJPCOMMA  &kp INT_YEN      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BSLH      &mt RIGHT_SHIFT INT_RO
+                                     &trans              &trans             &trans                &kp BACKSPACE   &to 2         &trans             &trans           &kp KP_NUMBER_0  &kp KP_COMMA     &kp KP_DOT
             >;
 
             sensor-bindings =
@@ -71,7 +69,6 @@
 
         control_layer {
             display-name = "control";
-
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                               &to 0        &to 1              &tog 2            &to 3       &none    &none
 &trans      &kp INS       &kp PSCRN     &kp K_CMENU   &kp C_AC_BACK  &kp C_AC_FORWARD                           &kp PG_UP    &kp HOME           &kp UP            &kp END     &none    &none
